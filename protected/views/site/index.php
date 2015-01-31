@@ -38,7 +38,7 @@
                         'type' => 'url',
                         'placeholder' => 'http://site.com',
                         'class' => 'form-control',
-                        'style' => 'width: 411px'
+                        'style' => 'width: 403px'
                     ]);
             ?>
             <?=

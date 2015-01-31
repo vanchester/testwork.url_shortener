@@ -5,7 +5,7 @@ return [
     'Link' => 'Ссылка',
 
     // buttons
-    'Shorten' => 'Укротить',
+    'Shorten' => 'Укоротить',
 
     // messages
     'Invalid link' => 'Указана некорректная ссылка'
