@@ -83,13 +83,17 @@ class Url extends CActiveRecord
 
     public function beforeValidate()
     {
-        $this->code = $this->generateCode();
+        if (!$this->code) {
+            $this->code = $this->generateCode();
+        }
         return parent::beforeValidate();
     }
 
     public function afterValidate()
     {
+        // на случай коллизий
         if ($this->hasErrors('code')) {
+            $this->code = null;
             $this->validate();
             return;
         }
