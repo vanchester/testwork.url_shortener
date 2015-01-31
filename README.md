@@ -21,7 +21,7 @@ git clone https://github.com/vanchester/url_shortener.git
 
 ```
 cd /path/to/url_shortener
-/path/to/php compoeser.phar up
+/path/to/php composer.phar up
 ```
 
 * Настройте права на запись для директорий **assets** и **protected/runtime**
