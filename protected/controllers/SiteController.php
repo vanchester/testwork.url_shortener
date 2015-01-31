@@ -4,20 +4,20 @@ class SiteController extends Controller
 {
     public function actionIndex()
     {
-        $urlModel = new Url;
+        $urlModel = new Url();
 
         if (Yii::app()->request->isPostRequest) {
             $urlModel->setAttributes(Yii::app()->request->getPost('Url'));
-            $ajaxRequest = Yii::app()->request->isAjaxRequest;
+            $isAjaxRequest = Yii::app()->request->isAjaxRequest;
 
             if ($urlModel->validate()) {
                 $urlModel->save();
-            } else if ($ajaxRequest) {
+            } else if ($isAjaxRequest) {
                 echo CActiveForm::validate($urlModel);
                 Yii::app()->end();
             }
 
-            if ($ajaxRequest) {
+            if ($isAjaxRequest) {
                 echo json_encode([
                     'status' => 'success',
                     'link' => Yii::app()->getBaseUrl(true) . '/' . $urlModel->code
