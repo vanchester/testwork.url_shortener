@@ -80,6 +80,6 @@
 
 <div id="result" class="form-group">
     <?php if ($link) : ?>
-        <input class="form-control" value="<?= $link ?>" />
+        <input class="form-control" value="<?= $link ?>" readonly="readonly"/>
     <?php endif ?>
 </div>
