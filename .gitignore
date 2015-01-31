@@ -1,0 +1,7 @@
+.idea/
+vendor/
+composer.lock
+puphpet/
+Vagrantfile
+.vagrant/
+protected/config/db.php

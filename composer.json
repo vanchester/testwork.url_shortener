@@ -1,0 +1,15 @@
+{
+    "name": "TestWork/URLShortener",
+    "description": "Тестовое задание: Укротитель ссылок",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Suturin",
+            "email": "ivan@suturin.com"
+        }
+    ],
+    "require": {
+        "php": ">= 5.4",
+        "yiisoft/yii": "1.1.16"
+    }
+}
